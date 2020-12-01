@@ -38,6 +38,12 @@ module Types
       UserProject.all
     end
 
+    field :steps,[Types::StepType], null: false, description: "Returns a list of steps"
+
+    def steps
+      Step.all
+    end
+
 
 
 
